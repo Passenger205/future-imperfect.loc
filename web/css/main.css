@@ -1,0 +1,166 @@
+/*RESET*/
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,body,figure,figcaption,ul,li {margin: 0;padding: 0;}
+a {text-decoration: none;}
+
+/*GENERAL*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,400i,700');
+html,body {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+	min-height: 600px;
+	margin: 0 15%;
+}
+
+body {
+	background: url(../images/bg.png) repeat;
+}
+
+
+/*HEADER*/
+.header{background: rgba(77,77,77,0.7);}
+
+.header__inner {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__inner {
+	padding: 10px;
+}
+
+/*LOGO*/
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo img {
+	height: 80px;
+}
+
+.logo__text {
+	color:#EAEAEA;
+	margin-left: 5%;
+	font-style: italic;
+	font-size: 42px;
+}
+
+/*MENU*/
+.menu {
+	margin-right: 5%;
+}
+
+.menu ul{
+	list-style: none;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+
+.menu ul a {
+	font-size: 25px;
+	padding: 36px 10px;
+	color:#FFFFFF;
+}
+
+.menu ul a {
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	transition: border 1s;
+}
+
+.menu ul a:hover {
+	border-left: 1px solid;
+	border-right: 1px solid;
+}
+
+/*HEADER-QUOTE*/
+
+.header-quote {
+	/*background: rgba(52,208,186,0.7);*/
+	background: rgba(77,77,77);
+	color: #FFFFFF;
+	text-align: center;
+	padding: 20px 0;
+	margin-bottom: 40px;
+}
+
+.quote {
+	display: inline-flex;
+	flex-flow: column wrap;
+}
+
+.quote__text {
+	font-family: Times New Roman;
+	font-size: 33px;
+	font-style: italic;
+}
+
+.quote__text:before {
+	content: '„';
+}
+
+.quote__text:after {
+	content: '“';
+}
+
+.quote__author {
+	margin-right: 5%;
+	font-style: italic;
+	font-size: 25px;
+	align-self: flex-end;
+}
+
+
+/*GRID*/
+
+.grid__header {
+  background-color: #4caf50;
+}
+.grid__nav {
+  background-color: #80d8ff;
+}
+.grid__main {
+  background-color: #009688;
+}
+.grid__footer {
+  background-color: #2196f3;
+}
+
+.grid {
+	display: grid;
+}
+
+.grid {
+	grid-template-areas: "header header"
+						 "nav main"
+						 "footer footer"
+}
+
+.grid__header {
+	grid-area: header;
+}
+.grid__nav {
+	grid-area: nav;
+}
+.grid__main {
+	grid-area: main;
+}
+.grid__footer {
+	grid-area: footer;
+}
